@@ -13,7 +13,7 @@ import * as constants from "./common/constants.mjs";
 let skipEnvSetup = false;
 let skipInstallStep = false;
 let skipPlugin = false;
-let skipPackages = false;
+let skipPackages = true; --packages=serverless-schedule-manager
 let overwrite = false;
 let uninstall = false;
 let environment = process.env.ENVIRONMENT;
