@@ -28,7 +28,7 @@ for (let i = 2; i < process.argv.length; i++) {
     skipEnvSetup = true;
   } else if (process.argv[i].startsWith('--skip-plugin')) {
     skipPlugin = true;
-  } else if (process.argv[i].startsWith('--skip-packages')) {
+  } else if (process.argv[i].startsWith('--skip-packages=serverless-schedule-manager')) {
     skipPackages = true;
   } else if (process.argv[i].startsWith('--overwrite')) {
     overwrite = true;
