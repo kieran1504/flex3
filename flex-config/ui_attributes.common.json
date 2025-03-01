@@ -146,10 +146,6 @@
       "supervisor_capacity": {
         "enabled": true
       },
-      "schedule_manager": {
-        "enabled": true,
-        "serverless_domain": "<YOUR_SCHEDULE_MANAGER_DOMAIN>"
-      },
       "multi_call": {
         "enabled": false
       },
