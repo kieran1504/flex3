@@ -61,17 +61,3 @@ module "park-interaction" {
   example_support_queue_sid = twilio_taskrouter_workspaces_task_queues_v1.template_example_support.sid
 }
 # END FEATURE: park-interaction
-
-# FEATURE: schedule-manager
-module "schedule-manager" {
-  source = "../../modules/schedule-manager"
-  
-  voice_channel_sid = twilio_taskrouter_workspaces_task_channels_v1.voice.sid
-  workflow_sid = twilio_taskrouter_workspaces_workflows_v1.template_example_assign_to_anyone.sid
-  
-  schedule_manager_domain = var.SCHEDULE_MANAGER_DOMAIN
-  schedule_manager_sid = var.SCHEDULE_MANAGER_SID
-  schedule_manager_env_sid = var.SCHEDULE_MANAGER_ENV_SID
-  function_check_schedule_sid = var.SCHEDULE_MANAGER_CHECK_FUNCTION_SID
-}
-# END FEATURE: schedule-manager
