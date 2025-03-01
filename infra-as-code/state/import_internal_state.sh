@@ -84,11 +84,6 @@ importInternalState() {
 	import_resource "$activities" "Extended Wrap Up" "module.activity-reservation-handler.twilio_taskrouter_workspaces_activities_v1.extended_wrap_up" "friendlyName"
 	echo "   - :white_check_mark: activity-reservation-handler resources" >>$GITHUB_STEP_SUMMARY
 # END FEATURE: activity-reservation-handler
-
-# FEATURE: schedule-manager
-	import_resource "$flows" "Template Example Schedule Flow" "module.schedule-manager.twilio_studio_flows_v2.template_example_schedule_flow" "friendlyName" false
-	echo "   - :white_check_mark: schedule-manager resources" >>$GITHUB_STEP_SUMMARY
-# END FEATURE: schedule-manager
 }
 
 # populate tfvars
