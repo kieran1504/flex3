@@ -44,10 +44,3 @@ output "example_parking_flow_sid" {
   description = "Example messaging with parking flow SID"
 }
 # END FEATURE: park-interaction
-
-# FEATURE: schedule-manager
-output "example_schedule_flow_sid" {
-  value = module.schedule-manager.example_schedule_flow_sid
-  description = "Example schedule flow SID"
-}
-# END FEATURE: schedule-manager
